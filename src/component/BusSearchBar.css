@@ -1,0 +1,171 @@
+/* 
+
+.bus-search-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 1rem;
+  margin: 0 auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  max-width: 1200px;
+  width: 95%;
+  box-sizing: border-box;
+  position: relative;
+  top: -40px;
+}
+
+.bus-to-date {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.from,
+.to {
+  border-right: 1px solid black;
+}
+
+.location input {
+  border: none;
+  border-radius: 8px;
+  background: #f5f5f5;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+.swap {
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.swap-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.date-picker button {
+  background-color: #ffe6e6;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.search-btn {
+  background-color: #d32f2f;
+  color: white;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.bus-search-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Toggle container styling */
+/* .toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* Switch styling */
+/* .switch { */
+  /* position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked+.slider {
+  background-color: #f85a40;
+}
+
+.switch input:checked+.slider:before {
+  transform: translateX(24px);
+}
+
+/* Responsive */
+/* @media (max-width: 768px) {
+  .bus-search-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    padding: 1rem;
+    top: 0;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}
+
+.Bussearch {
+  border: 1px solid black;
+} */ 
+
+/* BusSearchBar.css */
+
+/* Media query for screen width up to 600px */
+@media (max-width: 600px) {
+  .bussearch-container {
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .Bussearch {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .search-btn {
+    width: 100% !important;
+    max-width: 90vw;
+  }
+}

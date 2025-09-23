@@ -1,0 +1,71 @@
+.navbar-main {
+    padding: 0 !important;
+    max-width: 100%;
+}
+
+.navbar .navbar-container {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.booking-links a{
+    padding: 8px 0 2px 0;
+}
+.navbar .nav-link {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #d84e55;
+}
+
+.navbar-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    color: #3e3e52;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out, border-bottom 0.3s ease;
+}
+
+.navbar-active:hover {
+    color: #d84e55;
+}
+
+.navbar-active.active {
+    color: #d84e55;
+    border-bottom: 3px solid #d84e55;
+}
+
+/* .navbar-active img {
+  
+  margin-bottom: 5px;
+  transition: filter 0.3s ease;
+} */
+.navbar-active img {
+    max-width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    transition: filter 0.3s ease;
+}
+
+.navbar-active:hover img,
+.navbar-active.active img {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(97%) saturate(3564%) hue-rotate(325deg) brightness(93%) contrast(94%);
+}
+
+.right-menu .nav-link {
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.right-menu .nav-link:hover {
+    background-color: #d8dadb;
+    color: black;
+}
