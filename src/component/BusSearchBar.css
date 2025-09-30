@@ -86,7 +86,7 @@
 
 /* Switch styling */
 /* .switch { */
-  /* position: relative;
+/* position: relative;
   display: inline-block;
   width: 50px;
   height: 26px;
@@ -147,7 +147,7 @@
 
 .Bussearch {
   border: 1px solid black;
-} */ 
+} */
 
 /* BusSearchBar.css */
 
@@ -168,4 +168,13 @@
     width: 100% !important;
     max-width: 90vw;
   }
+}
+
+.women-toggle {
+  display: 'flex';
+    gap: '.75rem';
+    flex-direction: 'row';
+    margin: '.75rem';
+    text-align: 'center';
+    align-content: 'normal'
 }
