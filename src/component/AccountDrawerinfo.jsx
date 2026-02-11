@@ -8,22 +8,13 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Loginmodal from "./Loginmodal";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function AccountDrawerinfo({ openDrawer, setOpenDrawer }) {
     const [showSignin, setShowSignin] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
     const isModalOpen = showSignin || showLogin;
 
-    // useEffect(() => {
-    //     if (openDrawer || showSignin) {
-    //         document.body.style.overflow = "hidden";
-    //     } else {
-    //         document.body.style.overflow = "auto";
-    //     }
-    //     return () => {
-    //         document.body.style.overflow = "auto";
-    //     };
-    // }, [openDrawer, showSignin]);
     const location = useLocation();
 
     useEffect(() => {
@@ -33,7 +24,10 @@ export default function AccountDrawerinfo({ openDrawer, setOpenDrawer }) {
     }, [location.pathname]);
 
     return (
-        <div>
+        <motion.div
+        initial = {{ x: '100%'}}
+        animate = {{ x: "0"}}
+              transition={{ type: "tween", duration: 0.8 }}>
             <RightDrawer
                 open={openDrawer}
                 onOpenChange={setOpenDrawer}
@@ -98,6 +92,6 @@ export default function AccountDrawerinfo({ openDrawer, setOpenDrawer }) {
                     }}
                 />
             )}
-        </div>
+        </motion.div>
     )
 }

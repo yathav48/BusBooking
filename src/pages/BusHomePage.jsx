@@ -4,7 +4,6 @@ import BottomNavbar from "../component/BottomNavbar";
 import BusSearchBar from "../component/BusSearchBar";
 import FestivalBooking from "../component/FestivalBooking";
 import Footer from "../component/Footer";
-import Navbarcomponent from "../component/Navbar";
 import ParagraphContent from "../component/ParagraphContent";
 import { motion } from "framer-motion";
 import femaleicon from '../assets/femaleFunnel.svg';
@@ -54,12 +53,12 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <BottomNavbar />
                 <BusSearchBar />
                 <FestivalBooking />
                 <ParagraphContent />
                 <Footer />
                 <AboutContainer />
-                <BottomNavbar />
             </div>
         </>
     )

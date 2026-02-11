@@ -6,7 +6,7 @@ function BusCard({ bus, onViewSeats }) {
       
   return (
     <div
-      className="border rounded-xl p-4 shadow-sm cursor-pointer hover:shadow-md bg-white"
+      className="border rounded-2xl p-3 lg:p-4! shadow-sm cursor-pointer hover:shadow-md bg-white"
       onClick={() => onViewSeats(bus)}
     >
       <div className="flex flex-col gap-2">
@@ -35,7 +35,7 @@ function BusCard({ bus, onViewSeats }) {
               e.stopPropagation();
               onViewSeats(bus);
             }}
-            className="bg-red-600 text-white font-bold text-lg px-4 py-2.5! rounded-full!"
+            className="bg-red-600 text-white font-bold text-lg px-4 py-2 rounded-full! w-full md:w-fit"
           >
             View Seats
           </button>

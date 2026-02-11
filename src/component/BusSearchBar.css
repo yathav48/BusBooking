@@ -1,23 +1,37 @@
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(180deg);
-  }
-}
-
-.rotate {
-  display: inline-block;
-  transform-origin: center center;
-  width: 24px;
-  height: 24px;
-  animation: rotate360 0.4s ease-in-out;
-}
 
 @media screen and (max-width: 767px) {
   .bussearch-container {
     bottom: 0px;
   }
+}
+
+/* Default desktop */
+.custom-toast {
+  background-color: #ea580c !important;
+  color: white !important;
+  display: block !important;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px !important;
+  min-height: 48px !important;
+  padding: 10px 14px !important;
+}
+.Toastify__toast-container {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    bottom: 20px !important;
+    width: 80% !important;
+  }
+
+/* Mobile responsive */
+@media (max-width: 426px) {
+  .custom-toast {
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+    min-height: 40px !important;
+  }
+  .Toastify__toast-container {
+    width: 80% !important;
+  }
+  
 }

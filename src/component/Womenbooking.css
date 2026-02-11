@@ -1,0 +1,19 @@
+/* Normal dots */
+.pill-swiper .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background: gray;
+  opacity: 1;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  margin: 0 2px !important;
+}
+
+.pill-swiper .swiper-pagination-bullet-active {
+  width: 15px;            
+  background: #ff1f1f;      
+}
+ .swiper-pagination {
+    bottom: -5px !important;
+    position: absolute;
+ }
