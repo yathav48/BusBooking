@@ -53,13 +53,13 @@ export default function PriceBar({ bus, selectedSeats }) {
       exit={{ y: "100%" }}
       transition={{ type: "tween", duration: 0.8 }}
       className="fixed bottom-0 left-0 right-0 bg-white shadow-xl z-50">
-      <div className="flex flex-row justify-center p-3 gap-4 items-center">
+      <div className="flex flex-col md:flex-row justify-center p-3 gap-1 md:gap-4! items-center">
 
         <div className="flex gap-4">
           <div className="text-md font-semibold">{seatCount} seat{seatCount > 1 ? "s" : ""}</div>
           <div className="text-black text-xl font-bold">₹{total}</div>
         </div>
-        <button className="bg-red-600 text-white px-4 py-2 rounded-full! font-bold">
+        <button className="bg-red-600 text-white px-4 py-2 rounded-full! font-bold w-full md:w-fit">
           Select boarding & dropping point
         </button>
       </div>

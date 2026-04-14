@@ -162,7 +162,7 @@ function SearchResults() {
       className="absolute inset-0 z-50 bg-white"
     >
       <div className="max-w-7xl mx-auto bg-white">
-        <div className="flex flex-col lg:flex-row gap-3 justify-between my-3 sticky top-0">
+        <div className="flex flex-col lg:flex-row gap-3 justify-between my-3">
           <div className="flex items-center gap-4 border-b border-gray-300 lg:border-none w-full px-2 py-1">
             {/* Back Arrow */}
             <button
@@ -206,7 +206,7 @@ function SearchResults() {
       </div>
 
       {/* top filter panel (mobile screen) */}
-      <div className="sticky top-24 bg-white py-2 lg:hidden">
+      <div className="sticky top-0 bg-white py-2 lg:hidden">
         <div className="flex gap-2 items-center py-1">
           <div className="text-md font-semibold border border-gray-400 px-2 py-1 rounded-lg mx-2">
             Filters

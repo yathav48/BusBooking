@@ -28,9 +28,11 @@ export default {
     // "./node_modules/react-day-picker/dist/**/*.css",
   ],
   theme: {
-    extend: {color: {
-      
-    }},
+    extend: {
+      color: {
+            primary: "#000"
+    }
+  },
   },
   plugins: [
     require('@tailwindcss/forms'),

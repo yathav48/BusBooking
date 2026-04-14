@@ -108,7 +108,7 @@ function SeatSelectionDrawer({ bus, from, to, onClose }) {
             </h2>
           </div>
         </div>
-        <div className="py-4 px-4 bg-gray-200">
+        <div className="py-4 px-4 bg-gray-100">
           <div className="flex flex-col md:flex-row justify-around items-center gap-4">
             <div className="overflow-y-auto h-[70vh] w-full scrollbar-hide">
 
